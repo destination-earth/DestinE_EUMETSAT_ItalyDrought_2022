@@ -1,6 +1,12 @@
 # DestinE_EUMETSAT_ItalyDrought_2022
 Use case demonstration of DestinE Data Lake service for the disaster response assessment following the drought in Italy in 2022.
 
+An overview about how the use case was implemented and the given data flow is given in the following.
+
+<img src="./img/DEDL_DroughtUC_dataflow.png"
+     alt="Drought data flow"
+     style="width: 75%" />
+
 ## Demonstration
 
 ### Demonstration METOP ASCAT SM
