@@ -1,0 +1,27 @@
+name: dedl_flood
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - "bokeh>=2.4.2,<3"
+  - dask-gateway=2023.1.1
+  - cloudpickle=2.2.1
+  - s3fs=2023.6.0
+  - fsspec=2023.6.0
+  - xarray=2023.7.0
+  - dask=2023.8.0
+  - distributed=2023.8.0
+  - lz4=4.3.2
+  - tornado=6.3.2
+  - rioxarray
+  - python=3.11.4
+  - zarr
+  - pip
+  - leafmap
+  - jupyter_contrib_nbextensions
+  - geopandas
+  - pyresample
+  - pip:
+      - dedl-stack-client
+      - requests
+      - localtileserver
