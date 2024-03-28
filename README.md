@@ -9,7 +9,7 @@ An overview about how the use case was implemented and the given data flow is gi
 
 ## Demonstration
 
-### Demonstration METOP ASCAT SM
+### Demonstration METOP ASCAT soil moisture
 First the current drought situation is investigated and affected areas are delineated on a map. Data produced by HSAF service of EUMETSAT is used to depict the current situation in March 2022. Affected areas are deduced by incorporating information about the major land cover classes provided by the CORINE LC dataset.
 
 <img src="./img/DEDL_ItalyDrought2022_DroughtSituationMarch.gif"
@@ -28,6 +28,27 @@ The modelled scenario is evaluate based on observations provided by the meteorol
 <img src="./img/DEDL_ItalyDrought2022_SM_ASCAT_TS.gif"
      alt="Flood 2022-08-18"
      style="float: left; margin-right: 10px;" />
+
+### Demonstration Sentinel-1 soil moisture
+First the current drought situation is investigated by utilising Sentinel-1 soil moisture observations to identify affected areas. Sentinel-1 soil moisture data was produced by the ESA funded project 4DMED-Hydrology to depict the current situation in March 2022. Affected areas are deduced by incorporating information about the major land cover classes provided by the CORINE LC dataset.
+
+<img src="./img/DEDL_ItalyDrought2022_SM_Sentinel1_current.gif"
+     alt="Drought situation in March 2022 depicted via surface soil moisture"
+     style="float: left; margin-right: 10px;" />
+
+
+Outputs of the Climate Change Adaptation Digital Twin, simulated by ERA5 data, are used to forecast future drought affected areas. Soil moiture is used as climate variable indicating droughts for the area of Italy.<br><br>
+
+<img src="./img/DEDL_ItalyDrought2022_SM_DT_output.gif"
+     alt="Drought Italy 2022"
+     style="float: left; margin-right: 10px;" />
+
+The modelled scenario is evaluate with reference to Sentinel-1 deduced soil moisture observations for the summer period of 2022. As can be seen in the following, the gathered satellite observations confirm the DT outputs initally used to forecast the severity of the potential drought event.
+
+<img src="./img/DEDL_ItalyDrought2022_SM_Sentinel1_TS.gif"
+     alt="Flood 2022-08-18"
+     style="float: left; margin-right: 10px;" />
+
 
 Details about how the data was produced can be found in the given IPython notebook
 
